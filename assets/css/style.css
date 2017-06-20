@@ -1,0 +1,58 @@
+body {
+    background-color: black !important;
+}
+
+.page-header {
+  
+    background-color: darkblue;
+    color: white;
+	margin-top: -20px;
+	padding-top: 0;
+    /*margin-top: 0;*/
+    text-align: center;
+
+}
+
+#mainContent {
+
+	padding-bottom: 10px;
+	padding-right: 0:
+	padding-left:0; 
+}
+.panel-heading {
+	background-color: darkblue !important;
+	color: white !important;
+
+    
+}
+
+
+.input-group-addon {
+    font-size: 12px !important;
+    text-align: left !important;
+   /* width: 200px;*/
+    border: none;
+    background-color: white;
+
+}
+
+
+.row {
+    font-size: 12px;
+    text-align: left !important;
+
+}
+
+.btn btn-default search {
+
+
+}
+
+.but btn-default clear{
+
+    
+}
+
+button {
+    margin-top: 10px !important;
+}
