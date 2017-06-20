@@ -17,7 +17,7 @@ var config = {
   var frequency = "";
 
 $("#buttonPush").on("click", function(event) {
-  alert("hi");
+  //alert("hi");
 	event.preventDefault();
 
 	name = $("#nameInput").val().trim();
@@ -60,17 +60,16 @@ database.ref().on("child_added", function(childSnapshot) {
 
       // Change the HTML to reflect
       $("#trainDisplay").html(snapshot.val().name);
-      $("#email-display").html(snapshot.val().role);
-      $("#age-display").html(snapshot.val().monthlyRate);
-      $("#comment-display").html(snapshot.val().startDate);
+      $("#destination-display").html(snapshot.val().destination);
+      $("#trainTime-display").html(snapshot.val().trainTime);
+      $("#frequency-display").html(snapshot.val().frequency);
     });
 
     var randomDate = "02/23/1999";
     var randomFormat = "MM/DD/YYYY";
     var convertedDate = moment(randomDate, randomFormat);
 
-    console.log(moment(convertedDate).format("MM/DD/YY"));
+
     console.log(moment(convertedDate).format("MMM Do, YYYY hh:mm:ss"));
-    console.log(moment(convertedDate).format("X"));
-    console.log("----------------------------------------");
+   
 
